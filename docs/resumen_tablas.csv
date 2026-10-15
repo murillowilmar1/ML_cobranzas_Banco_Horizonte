@@ -1,0 +1,6 @@
+﻿tabla,filas,columnas,granularidad,clave_primaria,columna_periodo,desde,hasta,dias_cubiertos,filas_duplicadas_exactas,filas_con_pk_repetida,tamano_kb
+clientes,53,6,1 fila por cliente,cliente_id,fecha_vinculacion,2015-12-08,2023-04-20,2691,3,6,2.7
+creditos,65,9,1 fila por crédito,credito_id,fecha_desembolso,2023-05-29,2024-05-27,365,0,0,5.0
+pagos,1235,7,1 fila por pago registrado,pago_id,fecha_pago,2023-06-26,2025-12-30,919,5,10,77.9
+gestiones_cobranza,945,7,1 fila por gestión de cobranza,gestion_id,fecha_gestion,2024-07-01,2025-12-31,549,0,0,54.6
+cartera_diaria,35695,8,1 fila por crédito y día (snapshot diario),credito_id + fecha_corte,fecha_corte,2024-07-01,2025-12-31,549,10,20,1548.7

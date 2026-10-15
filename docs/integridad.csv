@@ -1,0 +1,15 @@
+﻿tabla,regla,filas_que_incumplen,valores
+clientes,PK única (cliente_id),6,
+creditos,PK única (credito_id),0,
+creditos,FK cliente_id → clientes.cliente_id,2,C99999
+creditos,NOT NULL cliente_id,0,
+pagos,PK única (pago_id),10,
+pagos,FK credito_id → creditos.credito_id,0,
+pagos,NOT NULL credito_id,0,
+gestiones_cobranza,PK única (gestion_id),0,
+gestiones_cobranza,FK credito_id → creditos.credito_id,0,
+gestiones_cobranza,NOT NULL credito_id,0,
+cartera_diaria,PK única (credito_id + fecha_corte),20,
+cartera_diaria,FK credito_id → creditos.credito_id,0,
+cartera_diaria,NOT NULL credito_id,0,
+cartera_diaria,NOT NULL fecha_corte,0,

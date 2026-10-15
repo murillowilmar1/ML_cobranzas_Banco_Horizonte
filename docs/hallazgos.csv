@@ -1,0 +1,20 @@
+﻿tabla,hallazgo,filas_afectadas,impacto
+clientes,Filas duplicadas exactas (cliente_id repetido),3,Inflan el conteo de clientes
+clientes,rango_ingreso nulo,4,Falta una variable de segmentación
+clientes,antiguedad_laboral_meses negativa,2,Valor imposible
+clientes,Clientes sin ningún crédito,1,Sin historia de crédito
+creditos,cliente_id inexistente en clientes (huérfano),2,Rompe la relación cliente-crédito
+creditos,monto_original <= 0,1,Valor imposible
+creditos,estado_actual con un único valor (ACTIVO),65,No hay créditos cancelados/castigados: sin variación para el modelo
+pagos,Filas duplicadas exactas (pago_id repetido),5,Doble conteo de recaudo
+pagos,fecha_pago en formato dd/mm/yyyy (resto es yyyy-mm-dd),2,Formato mixto: se pierde al convertir a fecha
+pagos,monto_pagado nulo,3,Pago sin valor
+pagos,fecha_registro anterior a fecha_pago,2,Registro antes del pago: incoherente
+pagos,tipo_pago y estado_pago con un único valor,1235,"Sin pagos parciales, reversados ni rechazados"
+gestiones_cobranza,canal con mayúsculas/minúsculas mezcladas (SMS vs sms),4,Una misma categoría aparece como 6 valores
+gestiones_cobranza,resultado nulo,3,Gestión sin resultado
+gestiones_cobranza,Créditos sin ninguna gestión,16,Esperable: solo se gestiona cuando hay mora
+cartera_diaria,Filas duplicadas exactas (credito_id + fecha_corte),10,Doble conteo de saldos
+cartera_diaria,dias_mora nulo,3,Mora desconocida en ese día
+cartera_diaria,saldo_capital negativo,2,Valor imposible
+cartera_diaria,valor_exigible idéntico a saldo_vencido en todas las filas,35695,Columna redundante
