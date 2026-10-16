@@ -1,0 +1,47 @@
+tabla,error,fila_csv,columna,antes,despues
+clientes,nulo,22,rango_ingreso,3-5M,
+clientes,nulo,17,rango_ingreso,3-5M,
+clientes,nulo,11,rango_ingreso,5-8M,
+clientes,nulo,34,rango_ingreso,1-2M,
+clientes,valor_negativo,21,antiguedad_laboral_meses,163,-163
+clientes,valor_negativo,2,antiguedad_laboral_meses,68,-68
+clientes,duplicado_exacto,44,*,C00043,(fila repetida)
+clientes,duplicado_exacto,7,*,C00006,(fila repetida)
+clientes,duplicado_exacto,49,*,C00048,(fila repetida)
+creditos,huerfano (cliente inexistente),65,cliente_id,C00047,C99999
+creditos,huerfano (cliente inexistente),3,cliente_id,C00002,C99999
+creditos,valor_negativo,22,monto_original,37000000,-37000000
+pagos,nulo,180,monto_pagado,661900,
+pagos,nulo,1023,monto_pagado,1412400,
+pagos,nulo,651,monto_pagado,1134700,
+pagos,fecha_formato_distinto,682,fecha_pago,2024-11-27,27/11/2024
+pagos,fecha_formato_distinto,106,fecha_pago,2023-12-25,25/12/2023
+pagos,registro_anterior_al_pago,365,fecha_registro,2024-06-15,2024-06-10
+pagos,registro_anterior_al_pago,979,fecha_registro,2025-05-31,2025-05-26
+pagos,duplicado_exacto,728,*,P00000727,(fila repetida)
+pagos,duplicado_exacto,640,*,P00000639,(fila repetida)
+pagos,duplicado_exacto,916,*,P00000915,(fila repetida)
+pagos,duplicado_exacto,251,*,P00000250,(fila repetida)
+pagos,duplicado_exacto,790,*,P00000789,(fila repetida)
+gestiones_cobranza,texto_sin_normalizar,456,canal,EMAIL,email
+gestiones_cobranza,texto_sin_normalizar,824,canal,SMS,sms
+gestiones_cobranza,texto_sin_normalizar,757,canal,LLAMADA,llamada
+gestiones_cobranza,texto_sin_normalizar,599,canal,LLAMADA,llamada
+gestiones_cobranza,nulo,30,resultado,CONTACTADO,
+gestiones_cobranza,nulo,226,resultado,CONTACTADO,
+gestiones_cobranza,nulo,375,resultado,NO_CONTACTADO,
+cartera_diaria,nulo,6304,dias_mora,0,
+cartera_diaria,nulo,34998,dias_mora,0,
+cartera_diaria,nulo,26551,dias_mora,0,
+cartera_diaria,valor_negativo,22094,saldo_capital,6750000,-6750000
+cartera_diaria,valor_negativo,32365,saldo_capital,18000000,-18000000
+cartera_diaria,duplicado_exacto,23495,*,CR000043,(fila repetida)
+cartera_diaria,duplicado_exacto,30564,*,CR000056,(fila repetida)
+cartera_diaria,duplicado_exacto,16115,*,CR000030,(fila repetida)
+cartera_diaria,duplicado_exacto,13501,*,CR000025,(fila repetida)
+cartera_diaria,duplicado_exacto,3950,*,CR000008,(fila repetida)
+cartera_diaria,duplicado_exacto,8010,*,CR000015,(fila repetida)
+cartera_diaria,duplicado_exacto,7071,*,CR000013,(fila repetida)
+cartera_diaria,duplicado_exacto,25573,*,CR000047,(fila repetida)
+cartera_diaria,duplicado_exacto,33510,*,CR000062,(fila repetida)
+cartera_diaria,duplicado_exacto,31445,*,CR000058,(fila repetida)
