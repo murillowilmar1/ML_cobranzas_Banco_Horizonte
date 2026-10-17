@@ -1,4 +1,5 @@
 credito_id,fecha_corte,dias_mora,saldo_capital,saldo_vencido,cuotas_vencidas,valor_exigible,estado_mora
+credito_id,fecha_corte,dias_mora,saldo_capital,saldo_vencido,cuotas_vencidas,valor_exigible,estado_mora
 CR000001,2024-07-01,0,13000000,0,0,0,AL_DIA
 CR000001,2024-07-02,0,13000000,0,0,0,AL_DIA
 CR000001,2024-07-03,0,13000000,0,0,0,AL_DIA
